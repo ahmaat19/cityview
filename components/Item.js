@@ -1,6 +1,10 @@
 import Image from 'next/image'
 
 const Item = (props) => {
+  // const myLoader = () => {
+  //   return `${props.image}?w=${100}&q=${75 || 75}`
+  // }
+
   return (
     <div className='card text-center bg-transparent border-0'>
       <div className='position-relative w-100'>
@@ -8,13 +12,14 @@ const Item = (props) => {
           className='image-fluid rounded-pill mx-auto w-100'
           src={props.image}
           alt={props.name}
+          // loader={myLoader}
           width='100'
           height='100'
           layout='responsive'
           objectFit='cover'
         />
         <button className='btn btn-light rounded-pill bg-warning border-0  price mx-auto image-fluid'>
-          {props.price}
+          ${props.price}
         </button>
       </div>
       <div className='card-body'>
