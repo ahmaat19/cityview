@@ -5,7 +5,10 @@ const Category = (props) => {
     <div className='card bg-transparent border-0'>
       <div className='card-body'>
         <Link href={`/${props.slug}`}>
-          <a className='btn btn-light bg-warning border-0 category btn-lg form-control category'>
+          <a
+            className='btn btn-light bg-warning border-0 category btn-lg form-control category'
+            style={{ fontSize: '0.9rem' }}
+          >
             {props.name}
           </a>
         </Link>

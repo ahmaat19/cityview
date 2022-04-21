@@ -18,7 +18,10 @@ const Item = (props) => {
         </button>
       </div>
       <div className='card-body'>
-        <h5 className='card-title text-uppercase fw-bold text-warning'>
+        <h5
+          className='card-title text-uppercase fw-bold text-warning'
+          style={{ fontSize: '0.9rem' }}
+        >
           {props.name}
         </h5>
         <p className='card-text text-light'>{props.description}</p>

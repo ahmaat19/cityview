@@ -6,6 +6,12 @@
 
 body {
   background-color: var(--primary-color);
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 0.9rem !important;
+  line-height: 1.5 !important;
+  font-weight: 400 !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
 }
 
 .price {
